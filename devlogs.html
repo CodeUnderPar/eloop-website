@@ -64,6 +64,94 @@
 
     <div class="container">
         <div class="devlog">
+    <div class="devlog">
+    <h2>Devlog #003 – Refactoring and Structural Cleanup</h2>
+    <div class="meta">February 28, 2026 | Office Cards</div>
+
+    <p>
+    This session focused on code cleanup and structural refactoring rather than adding new gameplay features.
+    What started as a small cleanup pass turned into a much larger organizational improvement.
+    </p>
+
+    <p>
+    Originally, I intended to remove unused variables and tidy up sections of the file.
+    As I worked through it, I realized the project file had grown large enough that it was
+    becoming difficult to navigate efficiently.
+    </p>
+
+    <h3>What Changed</h3>
+
+    <p>
+    The <strong>Card</strong> class and the <strong>EmployeeCard</strong> class were moved into their own
+    separate files. This significantly improved readability and reduced scrolling friction when
+    working inside the main project.
+    </p>
+
+    <p>
+    The next major candidate for separation is the Game class, though that will be handled
+    in a future session.
+    </p>
+
+    <p>
+    I also removed unnecessary SFX-related variables and began identifying areas where
+    variable usage can be reduced or consolidated going forward.
+    </p>
+
+    <p>
+    After refactoring, the project feels noticeably easier to manage.
+    Adding new features now requires less mental overhead.
+    </p>
+
+    <h3>Design Thoughts</h3>
+
+    <p>
+    I’m considering adding a round timer that would force decisions within a set time limit.
+    If a player fails to select a card before the timer expires, the selected card’s damage
+    and health effects would drop to zero.
+    </p>
+
+    <p>
+    This could increase tempo and make combo chaining more skill-based under pressure.
+    It’s still experimental and would need testing to determine if it enhances or frustrates gameplay.
+    </p>
+
+    <p>
+    Looking further ahead, I’m also thinking about implementing a simple progression system.
+    Players might begin with the Intern card and unlock additional employees through consecutive wins.
+    This is an early concept but could provide long-term structure.
+    </p>
+
+    <h3>Challenges</h3>
+
+    <p>
+    The most difficult design problem right now is making employee buffs interesting.
+    At the moment, they primarily modify health values, but that feels too static.
+    </p>
+
+    <p>
+    The goal is to create unique and meaningful buffs without overcomplicating the system.
+    Keeping the total number of employees limited (likely under eight) may help ensure each one
+    feels distinct and purposeful.
+    </p>
+
+    <h3>Current State</h3>
+
+    <p>
+    The game remains in early systems development. Some text glitches persist, and
+    overall balance is off since the combo system expansion.
+    </p>
+
+    <p>
+    The AI still needs to be updated to properly evaluate combo potential.
+    </p>
+
+    <p>
+    Structurally, however, the project is improving.
+    It’s becoming easier to work with and easier to expand.
+    </p>
+
+    <p><strong>Steady progress forward.</strong></p>
+</div>
     <h2>Devlog #002 – Combos, Expansion, and Balance</h2>
     <div class="meta">February 23, 2026 | Office Cards</div>
 
