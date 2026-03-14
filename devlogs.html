@@ -1,393 +1,255 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Devlogs - E-Loop Gaming Studios</title>
-    <style>
-        body {
-               
-            margin: 0;
-            background-color: #111315;
-            color: #e6e6e6;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
+<title>Devlogs - E-Loop Gaming Studios</title>
 
-        .container {
-            padding: 80px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+<style>
 
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-        }
+body{
+    margin:0;
+    background-color:#111315;
+    color:#e6e6e6;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
 
-        .devlog {
-            text-align: left;
-            margin-bottom: 60px;
-            border-bottom: 1px solid #333;
-            padding-bottom: 40px;
-        }
+.container{
+    padding:80px 20px;
+    max-width:900px;
+    margin:auto;
+}
 
-        .devlog h2 {
-            margin-bottom: 10px;
-        }
+h1{
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
 
-        .meta {
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-        }
+.devlog{
+    text-align:left;
+    margin-bottom:60px;
+    border-bottom:1px solid #333;
+    padding-bottom:40px;
+}
 
-        .back {
-            display: inline-block;
-            margin-top: 40px;
-            padding: 10px 20px;
-            border: 1px solid #555;
-            color: #e6e6e6;
-            text-decoration: none;
-        }
+.devlog h2{
+    margin-bottom:10px;
+}
 
-        .back:hover {
-            background-color: #222;
-        }
-    </style>
+.meta{
+    color:#888;
+    font-size:0.9rem;
+    margin-bottom:20px;
+}
+
+.back{
+    display:inline-block;
+    margin-top:40px;
+    padding:10px 20px;
+    border:1px solid #555;
+    color:#e6e6e6;
+    text-decoration:none;
+}
+
+.back:hover{
+    background-color:#222;
+}
+
+</style>
 </head>
+
 <body>
-     <div style="text-align:center; padding:20px; border-bottom:1px solid #222;">
-    <a href="index.html" style="margin:0 15px; color:#ccc; text-decoration:none;">Home</a>
-    <a href="office-cards.html" style="margin:0 15px; color:#ccc; text-decoration:none;">Office Cards</a>
-    <a href="devlogs.html" style="margin:0 15px; color:#ccc; text-decoration:none;">Devlogs</a>
-    <a href="about.html" style="margin:0 15px; color:#ccc; text-decoration:none;">About</a>
-    </div>
-    <div class="devlog">
-        
-    <h2>Devlog #004 – Completing the Employee Perk System</h2>
-    <div class="meta">March 14, 2026 | Office Cards</div>
-    
-    <p>
-    The past few weeks were focused on fixing smaller bugs and finishing one of the game's largest systems: the employee perk system.
-    </p>
-    
-    <p>
-    A couple of minor text bugs were resolved during this time. Some messages were triggering when they shouldn’t have been, which turned out to be an easy fix once the conditions were corrected.
-    </p>
-    
-    <p>
-    The majority of development time, however, was spent completing the employee system. Working through this system taught me a lot about implementing <strong>trigger-based mechanics</strong> and how they can drive gameplay events.
-    </p>
-    
-    <h3>What Changed</h3>
-    
-    <p>
-    The employee system is now fully implemented.
-    </p>
-    
-    <p>
-    Employees now have perks that trigger when specific events occur during gameplay. Four of the employees currently have their perks implemented, and the remaining ones will be added later. Now that the system framework is in place, adding additional perks should be much easier.
-    </p>
-    
-    <p>
-    Employee-specific cards have also been integrated into the deck. Each employee now has a unique card tied to them, and the employee system itself is functionally complete. The next phase will be refining and balancing these effects.
-    </p>
-    
-    <p>
-    In addition to the employee system, the card pool was expanded with:
-    </p>
-    
-    <ul>
-    <li>20 new basic cards</li>
-    <li>5 new special cards</li>
-    </ul>
-    
-    <h3>Design Thoughts</h3>
-    
-    <p>
-    At this point, the game is approaching feature completion.
-    </p>
-    
-    <p>
-    The core systems are now in place:
-    </p>
-    
-    <ul>
-    <li>Basic cards</li>
-    <li>Special cards</li>
-    <li>Unique employee cards</li>
-    <li>The combo system</li>
-    <li>The employee perk system</li>
-    </ul>
-    
-    <p>
-    Because of this, development will likely shift away from adding new mechanics and toward <strong>balancing and AI improvements</strong>.
-    </p>
-    
-    <p>
-    One possible addition is a simple progression or level system, but the primary focus going forward will be refining what already exists rather than expanding the scope of the project.
-    </p>
-    
-    <h3>Challenges</h3>
-    
-    <p>
-    The biggest challenge during this period was designing and implementing the trigger system used by employee perks.
-    </p>
-    
-    <p>
-    It took some time to fully understand how to structure the triggers and apply them effectively within the game. With the help of documentation, online resources, and AI assistance, I eventually arrived at a system that works well and should be easy to expand later.
-    </p>
-    
-    <p>
-    The next major challenge will be improving the <strong>AI system</strong>.
-    </p>
-    
-    <p>
-    Ideally, the AI should have multiple difficulty levels:
-    </p>
-    
-    <ul>
-    <li>Low difficulty: does not fully utilize combos</li>
-    <li>High difficulty: aggressively takes advantage of combos and system interactions</li>
-    </ul>
-    
-    <h3>Current State</h3>
-    
-    <p>
-    Office Cards is now <strong>largely feature complete</strong>.
-    </p>
-    
-    <p>
-    The remaining work will focus on:
-    </p>
-    
-    <ul>
-    <li>Game balance</li>
-    <li>AI improvements</li>
-    <li>Visual improvements and art updates</li>
-    </ul>
-    
-    <p>
-    Since this was my first major project, parts of the codebase are not as organized as they could be. Instead of continuing to expand the game indefinitely, I may begin a new project in the future using the lessons learned here.
-    </p>
-    
-    <p>
-    For now, the next step will be refining what exists and beginning an <strong>art overhaul</strong> for the game.
-    </p>
-    
-    <p><strong>Steady progress forward.</strong></p>
-    </div>
 
-    
-    <h2>Devlog #003 – Refactoring and Structural Cleanup</h2>
-    <div class="meta">February 28, 2026 | Office Cards</div>
-
-    <p>
-    This session focused on code cleanup and structural refactoring rather than adding new gameplay features.
-    What started as a small cleanup pass turned into a much larger organizational improvement.
-    </p>
-
-    <p>
-    Originally, I intended to remove unused variables and tidy up sections of the file.
-    As I worked through it, I realized the project file had grown large enough that it was
-    becoming difficult to navigate efficiently.
-    </p>
-    <div style="margin:30px 0; text-align:center;">
-    <video controls style="width:100%; max-width:800px; border-radius:8px; border:1px solid #333;">
-        <source src="early-game-clip.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <p style="color:#777; font-size:0.9rem; margin-top:10px;">
-        Early gameplay footage showcasing combo system and refactored structure.
-    </p>
+<div style="text-align:center; padding:20px; border-bottom:1px solid #222;">
+<a href="index.html" style="margin:0 15px; color:#ccc; text-decoration:none;">Home</a>
+<a href="office-cards.html" style="margin:0 15px; color:#ccc; text-decoration:none;">Office Cards</a>
+<a href="devlogs.html" style="margin:0 15px; color:#ccc; text-decoration:none;">Devlogs</a>
+<a href="about.html" style="margin:0 15px; color:#ccc; text-decoration:none;">About</a>
 </div>
-    <h3>What Changed</h3>
 
-    <p>
-    The <strong>Card</strong> class and the <strong>EmployeeCard</strong> class were moved into their own
-    separate files. This significantly improved readability and reduced scrolling friction when
-    working inside the main project.
-    </p>
+<div class="container">
 
-    <p>
-    The next major candidate for separation is the Game class, though that will be handled
-    in a future session.
-    </p>
+<h1>Development Logs</h1>
 
-    <p>
-    I also removed unnecessary SFX-related variables and began identifying areas where
-    variable usage can be reduced or consolidated going forward.
-    </p>
 
-    <p>
-    After refactoring, the project feels noticeably easier to manage.
-    Adding new features now requires less mental overhead.
-    </p>
+<!-- DEVLOG 004 -->
 
-    <h3>Design Thoughts</h3>
+<div class="devlog">
 
-    <p>
-    I’m considering adding a round timer that would force decisions within a set time limit.
-    If a player fails to select a card before the timer expires, the selected card’s damage
-    and health effects would drop to zero.
-    </p>
+<h2>Devlog #004 – Completing the Employee Perk System</h2>
+<div class="meta">March 14, 2026 | Office Cards</div>
 
-    <p>
-    This could increase tempo and make combo chaining more skill-based under pressure.
-    It’s still experimental and would need testing to determine if it enhances or frustrates gameplay.
-    </p>
+<p>
+The past few weeks were focused on fixing smaller bugs and finishing one of the game's largest systems: the employee perk system.
+</p>
 
-    <p>
-    Looking further ahead, I’m also thinking about implementing a simple progression system.
-    Players might begin with the Intern card and unlock additional employees through consecutive wins.
-    This is an early concept but could provide long-term structure.
-    </p>
+<p>
+A couple of minor text bugs were resolved during this time. Some messages were triggering when they shouldn’t have been, which turned out to be an easy fix once the conditions were corrected.
+</p>
 
-    <h3>Challenges</h3>
+<p>
+The majority of development time, however, was spent completing the employee system. Working through this system taught me a lot about implementing <strong>trigger-based mechanics</strong> and how they can drive gameplay events.
+</p>
 
-    <p>
-    The most difficult design problem right now is making employee buffs interesting.
-    At the moment, they primarily modify health values, but that feels too static.
-    </p>
+<h3>What Changed</h3>
 
-    <p>
-    The goal is to create unique and meaningful buffs without overcomplicating the system.
-    Keeping the total number of employees limited (likely under eight) may help ensure each one
-    feels distinct and purposeful.
-    </p>
+<p>
+The employee system is now fully implemented.
+</p>
 
-    <h3>Current State</h3>
+<p>
+Employees now have perks that trigger when specific events occur during gameplay. Four of the employees currently have their perks implemented, and the remaining ones will be added later. Now that the system framework is in place, adding additional perks should be much easier.
+</p>
 
-    <p>
-    The game remains in early systems development. Some text glitches persist, and
-    overall balance is off since the combo system expansion.
-    </p>
+<p>
+Employee-specific cards have also been integrated into the deck. Each employee now has a unique card tied to them, and the employee system itself is functionally complete. The next phase will be refining and balancing these effects.
+</p>
 
-    <p>
-    The AI still needs to be updated to properly evaluate combo potential.
-    </p>
+<p>
+In addition to the employee system, the card pool was expanded with:
+</p>
 
-    <p>
-    Structurally, however, the project is improving.
-    It’s becoming easier to work with and easier to expand.
-    </p>
+<ul>
+<li>20 new basic cards</li>
+<li>5 new special cards</li>
+</ul>
 
-    <p><strong>Steady progress forward.</strong></p>
+<h3>Design Thoughts</h3>
+
+<p>
+At this point, the game is approaching feature completion.
+</p>
+
+<p>
+The core systems are now in place:
+</p>
+
+<ul>
+<li>Basic cards</li>
+<li>Special cards</li>
+<li>Unique employee cards</li>
+<li>The combo system</li>
+<li>The employee perk system</li>
+</ul>
+
+<p>
+Because of this, development will likely shift away from adding new mechanics and toward <strong>balancing and AI improvements</strong>.
+</p>
+
+<p>
+One possible addition is a simple progression or level system, but the primary focus going forward will be refining what already exists rather than expanding the scope of the project.
+</p>
+
+<h3>Challenges</h3>
+
+<p>
+The biggest challenge during this period was designing and implementing the trigger system used by employee perks.
+</p>
+
+<p>
+It took some time to fully understand how to structure the triggers and apply them effectively within the game. With the help of documentation, online resources, and AI assistance, I eventually arrived at a system that works well and should be easy to expand later.
+</p>
+
+<p>
+The next major challenge will be improving the <strong>AI system</strong>.
+</p>
+
+<p>
+Ideally, the AI should have multiple difficulty levels:
+</p>
+
+<ul>
+<li>Low difficulty: does not fully utilize combos</li>
+<li>High difficulty: aggressively takes advantage of combos and system interactions</li>
+</ul>
+
+<p><strong>Steady progress forward.</strong></p>
+
 </div>
-    <h2>Devlog #002 – Combos, Expansion, and Balance</h2>
-    <div class="meta">February 23, 2026 | Office Cards</div>
 
-    <p>
-    This session was focused on expanding and restructuring the combo system.
-    </p>
 
-    <p>
-    Originally, adding new combos required touching multiple areas of the code,
-    which made experimentation slower than it needed to be. I refactored the system
-    so new combinations can now be added more cleanly. That change alone makes
-    future iteration much easier.
-    </p>
+<!-- DEVLOG 003 -->
 
-    <p>
-    I introduced a few new combo variations, including Double and Triple bonuses,
-    as well as a health bonus triggered when three cards start with the letter “P.”
-    They’re functional, though not yet fully balanced.
-    </p>
+<div class="devlog">
 
-    <p>
-    I also added a subtle shake effect when combos activate. It’s a small detail,
-    but it gives the game more physical feedback and makes successful plays feel
-    more impactful.
-    </p>
+<h2>Devlog #003 – Refactoring and Structural Cleanup</h2>
+<div class="meta">February 28, 2026 | Office Cards</div>
 
-    <h3>Expanding the Employee System</h3>
+<p>
+This session focused on code cleanup and structural refactoring rather than adding new gameplay features.
+</p>
 
-    <p>
-    I’ve started laying the groundwork for unique employee cards. Each employee
-    will eventually have a signature card. For example, Intern Tim now has a special
-    card called <em>Tim’s Stapler</em>. At the moment, it simply deals more damage
-    than a standard card, but this opens the door to more interesting synergies
-    in the future.
-    </p>
+<p>
+Originally, I intended to remove unused variables and tidy up sections of the file.
+As I worked through it, I realized the project file had grown large enough that it was becoming difficult to navigate efficiently.
+</p>
 
-    <p>
-    Right now, employee cards mainly provide health bonuses. I’d like to push
-    them toward something more strategic — something that changes how you approach
-    a round rather than just increasing a number.
-    </p>
+<div style="margin:30px 0; text-align:center;">
+<video controls style="width:100%; max-width:800px; border-radius:8px; border:1px solid #333;">
+<source src="early-game-clip.mp4" type="video/mp4">
+</video>
 
-    <h3>A Design Question</h3>
-
-    <p>
-    One decision I’m still working through: should combos reset each round,
-    or carry forward between rounds?
-    </p>
-
-    <p>
-    If they carry over, the game becomes momentum-driven and potentially snowballs.
-    If they reset, each round becomes more contained and tactical.
-    </p>
-
-    <h3>The Current Problem</h3>
-
-    <p>
-    The game has become much easier to win. The issue isn’t that combos are broken —
-    it’s that the AI doesn’t know how to use them.
-    </p>
-
-    <p>
-    Improving AI awareness of combo potential is the next real challenge.
-    </p>
-
-    <h3>Where Things Stand</h3>
-
-    <p>
-    The game is still in an early systems phase. Some UI text bugs remain.
-    Visual assets are placeholders. The codebase still needs cleanup in areas.
-    </p>
-
-    <p>
-    But the structure is improving. The combo system is more flexible.
-    The foundation is getting stronger.
-    </p>
-
-    <p><strong>Steady progress.</strong></p>
+<p style="color:#777; font-size:0.9rem; margin-top:10px;">
+Early gameplay footage showcasing combo system and refactored structure.
+</p>
 </div>
-        <h1>Development Logs</h1>
 
-        <div class="devlog">
-            <h2>Devlog #001 – Establishing the Foundation</h2>
-            <div class="meta">February 2026 | Office Cards</div>
+<p>
+The <strong>Card</strong> class and the <strong>EmployeeCard</strong> class were moved into their own separate files.
+</p>
 
-            <p>
-                This session focused on establishing foundational structure — both for the studio and the game itself.
-                The goal wasn’t feature expansion, but clarity and infrastructure.
-            </p>
-            <div style="margin-top:40px;">
-                <img src="office-cards-screenshot.png" 
-                 alt="Office Cards Gameplay Screenshot"
-                 style="width:100%; max-width:900px; border:1px solid #333; border-radius:8px;">
-                <p style="color:#777; font-size:0.9rem; margin-top:10px;">
-                    Gameplay screenshot. Visual card art generated using AI tools.
-                </p>
-            </div>
+<p><strong>Steady progress forward.</strong></p>
 
-            <p>
-                The studio website was launched at eloopgames.com, including domain configuration,
-                GitHub Pages deployment, HTTPS setup, and creation of dedicated project pages.
-            </p>
+</div>
 
-            <p>
-                On the development side, work continued on combo system logic, floating text fixes,
-                and overall game structure refactoring toward a centralized Game class.
-            </p>
 
-            <p>
-                The direction remains focused on clean systems, meaningful gameplay loops,
-                and steady, intentional progress.
-            </p>
-        </div>
+<!-- DEVLOG 002 -->
 
-        <a href="index.html" class="back">Back to Home</a>
-    </div>
+<div class="devlog">
+
+<h2>Devlog #002 – Combos, Expansion, and Balance</h2>
+<div class="meta">February 23, 2026 | Office Cards</div>
+
+<p>
+This session was focused on expanding and restructuring the combo system.
+</p>
+
+<p>
+New combo variations were introduced, including Double and Triple bonuses and a health bonus triggered when three cards start with the letter “P.”
+</p>
+
+<p><strong>Steady progress.</strong></p>
+
+</div>
+
+
+<!-- DEVLOG 001 -->
+
+<div class="devlog">
+
+<h2>Devlog #001 – Establishing the Foundation</h2>
+<div class="meta">February 2026 | Office Cards</div>
+
+<p>
+This session focused on establishing foundational structure for both the studio and the game itself.
+</p>
+
+<div style="margin-top:40px;">
+<img src="office-cards-screenshot.png"
+style="width:100%; max-width:900px; border:1px solid #333; border-radius:8px;">
+
+<p style="color:#777; font-size:0.9rem; margin-top:10px;">
+Gameplay screenshot. Visual card art generated using AI tools.
+</p>
+</div>
+
+<p><strong>Steady progress forward.</strong></p>
+
+</div>
+
+
+<a href="index.html" class="back">Back to Home</a>
+
+</div>
+
 </body>
 </html>
